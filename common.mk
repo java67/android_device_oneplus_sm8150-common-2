@@ -530,12 +530,4 @@ PRODUCT_BOOT_JARS += \
     
 TARGET_HAS_FOD := true
 
-# Permission Hackery 
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.control_privapp_permissions=disable \
-    ro.adb.secure=0 \
-    persist.sys.usb.config=mtp,adb \
-    persist.service.debuggable=1 \
-    persist.service.adb.enable=1
-
 BUILD_RR_WALLPAPERS:= true
